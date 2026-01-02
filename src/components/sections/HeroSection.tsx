@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle, Star, Play, Award, Zap, Sparkles, Shield, Clock, Upload, MessageCircle, Phone, FileText, Scissors } from 'lucide-react';
+import { ArrowRight, Award, Zap, Sparkles, Shield, Clock, Upload, Phone, FileText, Scissors } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   return (

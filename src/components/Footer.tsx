@@ -26,16 +26,16 @@ const Footer: React.FC = () => {
               unmatched quality, precision, and creativity. Direct UV Printing WITH WHITE available.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
@@ -51,11 +51,11 @@ const Footer: React.FC = () => {
           >
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">UV Printing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Banner Printing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Laser Cutting</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Digital Printing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Custom Solutions</a></li>
+              <li><a href="#quote-form?service=uv-printing" className="text-gray-400 hover:text-white transition-colors">UV Printing</a></li>
+              <li><a href="#quote-form?service=banner-printing" className="text-gray-400 hover:text-white transition-colors">Banner Printing</a></li>
+              <li><a href="#quote-form?service=laser-cutting" className="text-gray-400 hover:text-white transition-colors">Laser Cutting</a></li>
+              <li><a href="#quote-form?service=laser-printing" className="text-gray-400 hover:text-white transition-colors">Digital Printing</a></li>
+              <li><a href="#quote-form?service=custom" className="text-gray-400 hover:text-white transition-colors">Custom Solutions</a></li>
             </ul>
           </motion.div>
 
@@ -69,11 +69,11 @@ const Footer: React.FC = () => {
           >
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors text-left">About Us</button></li>
+              <li><button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors text-left">Portfolio</button></li>
+              <li><a href="#quote-form" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+              <li><button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors text-left">Blog</button></li>
+              <li><a href="#quote-form" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </motion.div>
 
@@ -128,9 +128,9 @@ const Footer: React.FC = () => {
             © 2024 PrintPro. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors">Privacy Policy</button>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors">Terms of Service</button>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-gray-400 hover:text-white transition-colors">Cookie Policy</button>
           </div>
         </motion.div>
       </div>

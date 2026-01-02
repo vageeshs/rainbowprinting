@@ -31,19 +31,11 @@ jobs:
       env:
         CI: false
 
-    - name: Verify publish profile exists
-      run: |
-        if [ -z "${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}" ]; then
-          echo "ERROR: AZURE_WEBAPP_PUBLISH_PROFILE secret is empty or not set"
-          exit 1
-        else
-          echo "Publish profile secret is set (length hidden for security)"
-        fi
-
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'printstudio'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ./build
+        type: zip
 

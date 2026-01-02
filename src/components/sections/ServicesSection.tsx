@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { products } from '../../data/products';
-import { ArrowRight, CheckCircle, Star, Zap, Award, Clock, Sparkles, Shield, Users } from 'lucide-react';
+import { ArrowRight, Star, Sparkles } from 'lucide-react';
 
 const ServicesSection: React.FC = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Shield, Clock, Award, Users, Headphones, Star, CheckCircle } from 'lucide-react';
+import { Zap, Shield, Clock, Award, Users, Headphones, Star } from 'lucide-react';
 
 const FeaturesSection: React.FC = () => {
   const features = [
