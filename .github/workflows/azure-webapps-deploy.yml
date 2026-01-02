@@ -1,10 +1,13 @@
 name: Build and Deploy to Azure App Service
 
+# Disabled - Using Azure's auto-generated workflow (main_printstudio.yml) instead
+# on:
+#   push:
+#     branches:
+#       - main
+#   workflow_dispatch:
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_dispatch:  # Only allow manual triggers, not automatic on push
 
 env:
   NODE_VERSION: '18.x'
